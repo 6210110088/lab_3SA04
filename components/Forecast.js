@@ -6,8 +6,16 @@ export default function Forecast(props){
         <View>
             <Text>{props.main}</Text>
             <Text>{props.description}</Text>
-            <Text>{props.temp}</Text>
-            <Text>°C</Text>
+            <View style={styles.rowText}>
+                <Text>{props.temp}</Text>
+                <Text>°C</Text>
+            </View>
         </View>
     )
 }
+
+const styles = StyleSheet.create({
+    rowText: {
+        flexDirection: 'row'
+    }
+})
