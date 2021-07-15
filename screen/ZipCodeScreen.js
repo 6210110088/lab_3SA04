@@ -9,12 +9,12 @@ const availableZipItems = [
     { place: 'Chonburi', code: '20000' },
 ]   
 
-const ZipItem = (place, code) => {
+const ZipItem = ({place, code}) => (
     <View>
         <Text>{place}</Text>
         <Text>{code}</Text>
     </View>
-}
+)
 
 export default function ZipCodeScreen(){
     return (
