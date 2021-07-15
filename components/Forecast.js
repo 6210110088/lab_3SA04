@@ -4,8 +4,8 @@ import { View, Text, StyleSheet } from 'react-native'
 export default function Forecast(props){
     return (
         <View style={styles.textInfo}>
-            <Text>{props.main}</Text>
-            <Text>{props.description}</Text>
+            <Text style={styles.textMainInfoSize}>{props.main}</Text>
+            <Text style={styles.infoMargin}>{props.description}</Text>
             <View style={styles.rowText}>
                 <Text style={styles.tempSize}>{props.temp}</Text>
                 <Text style={styles.tempUnitSize}>°C</Text>
@@ -19,14 +19,20 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
     },
     tempUnitSize: {
-        fontSize: 10,
+        fontSize: 14,
         textAlignVertical: 'center'
     },
     tempSize: {
-        fontSize: 18
+        fontSize: 30
     },
     textInfo: {
         textAlign: 'center',
         alignItems: 'center'
+    },
+    infoMargin: {
+        margin: 40
+    },
+    textMainInfoSize: {
+        fontSize: 30
     }
 })
