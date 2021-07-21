@@ -53,8 +53,9 @@ const styles = StyleSheet.create({
         textAlign: 'center'
     },
     textBackground: {
+        backgroundColor: 'rgba(204,255,255,0.5)',
         width: '100%',
-        height: '30%'
+        height: '40%'
     },
     headerText: {
         margin: 20,

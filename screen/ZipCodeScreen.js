@@ -36,6 +36,7 @@ export default function ZipCodeScreen(){
 
 const styles = StyleSheet.create({
     zipItem: {
+        backgroundColor: 'rgba(204,255,255,0.5)',
         flex: 1,
         flexDirection: 'row',
         height: 60,
