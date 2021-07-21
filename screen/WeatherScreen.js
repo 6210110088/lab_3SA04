@@ -5,7 +5,7 @@ import { View } from 'react-native'
 export default function WeatherScreen({route}){
     return (
         <View>
-            <Weather zipCode={route.params.zipCode}/>
+            <Weather zipCode={route.params.zipCode} place={route.params.place}/>
         </View>
     )
 }
