@@ -13,7 +13,8 @@ export default function Weather(props){
                     setForecastInfo({
                         main: json.weather[0].main,
                         description: json.weather[0].description,
-                        temp: json.main.temp
+                        temp: json.main.temp,
+                        feelTemp: json.main.feels_like,
                     });
             })
             .catch((error) => {
@@ -25,7 +26,8 @@ export default function Weather(props){
     const [forecastInfo, setForecastInfo] = useState({
       main: 'main',
       description: 'description',
-      temp: 0
+      temp: 0,
+      feelTemp: '',
     })
 
     return(
